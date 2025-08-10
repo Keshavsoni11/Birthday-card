@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.fullpage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #68b0ab;
+}
+
+.head{
+  position: absolute;
+  transform: translateY(-15rem);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.button1 {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 10px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 73rem;
+  top: 38rem;
+}
+
+.button2 {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 10px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 73rem;
+  top: 38rem;
+}

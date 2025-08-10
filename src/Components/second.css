@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: #68b0ab;
+  font-family: "Quicksand", sans-serif;
+}
+
+.fullpage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  background: #68b0ab;
+}
+
+/* Heading */
+.head {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+/* Message Box */
+.birthday-message {
+  background: #d3e8e6;
+  color: #4c8683;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  max-height: 70vh;
+  overflow-y: auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  animation: fadeIn 1.5s ease-in-out;
+  border: 2px solid #a5d0cd;
+  text-align: left;
+}
+
+/* Paragraph inside message */
+.birthday-message p {
+  margin-bottom: 1rem;
+}
+
+/* Highlighted words */
+.birthday-message strong {
+  color: #68b0ab;
+  font-weight: 600;
+}
+
+/* Ending text inside message */
+.birthday-message .ending {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3a6b6a;
+  margin-top: 1.5rem;
+}
+
+/* Buttons */
+.button1,
+.button2 {
+  position: absolute;
+  bottom: 2rem;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 10px;
+  background: #ff6f61;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button1:hover,
+.button2:hover {
+  background: #ff4e42;
+  transform: scale(1.05);
+}
+
+.button1 {
+  left: 2rem;
+}
+
+.button2 {
+  right: 2rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

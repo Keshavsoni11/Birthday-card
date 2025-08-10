@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainpage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #68b0ab;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+/* Top Image */
+.hp1 {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.hp1 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Heading */
+.heading {
+  background: #68b0ab;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.heading-text {
+  font-family: "Pacifico", cursive;
+  font-size: 1.8rem;
+  color: #fffdfd;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+
+/* Background image */
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%);
+  mask-image: linear-gradient(to right, transparent 0%, black 25%);
+}
+
+/* Cake in center */
+.cake-center {
+  margin-top: 2rem;
+}
+
+/* Button */
+.button {
+  margin-top: auto;
+  margin-bottom: 2rem;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 10px;
+  background: #68b0ab;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #d3e8e6;
+  transform: scale(1.05);
+}
+
+/* Tablet view */
+@media (min-width: 768px) {
+  .heading-text {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1024px) {
+  .hp1 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 30rem;
+  }
+
+  .heading {
+    position: absolute;
+    top: 8.5rem;
+    left: 5rem;
+    max-width: 25rem;
+  }
+
+  .cake-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button {
+    position: absolute;
+    bottom: 2rem;
+  }
+}
